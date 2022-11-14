@@ -1,11 +1,7 @@
-<%
-def answer(your_message)
-  if your_message.downcase == "i am going to work right now!"
-    ""
-  elsif your_message.end_with?("?")
-    "Silly question, get dressed and go to work!"
-  else
-    "I don't care, get dressed and go to work!"
-  end
-end
-%>
+<h1>CoachingController</h1>
+
+
+ <h2><%= @question %></h2>
+<p><%= @answer %></p>
+
+<%= link_to'Ask a new question', ask_path %>
